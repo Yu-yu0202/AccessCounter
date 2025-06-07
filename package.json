@@ -21,5 +21,9 @@
     "clean:windows": "rmdir /s /q dist",
     "clean": "npm run clean:linux || npm run clean:windows",
     "dev": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@types/typescript": "^0.4.29",
+    "typescript": "^5.8.3"
   }
 }
