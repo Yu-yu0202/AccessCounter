@@ -1,0 +1,25 @@
+{
+  "name": "accesscounter",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Yu-yu0202/AccessCounter#readme",
+  "bugs": {
+    "url": "https://github.com/Yu-yu0202/AccessCounter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yu-yu0202/AccessCounter.git"
+  },
+  "license": "BSD-3-Clause",
+  "author": "Yu-yu0202",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "clean:linux": "rm -rf dist",
+    "clean:windows": "rmdir /s /q dist",
+    "clean": "npm run clean:linux || npm run clean:windows",
+    "dev": "ts-node src/index.ts"
+  }
+}
